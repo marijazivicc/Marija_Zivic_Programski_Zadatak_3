@@ -1,0 +1,198 @@
+<html>
+<head>
+<title>projektnizadatak3</title>
+</head>
+<style>
+body {
+margin:0;
+padding:0;
+height:100vh;
+background-image: url("slike1/pozadina.jpeg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center center;
+}
+<style>
+body {
+font-family: Calibri, sans-serif;
+}
+.navbar {
+margin:8px;
+display:flex;
+align-items:center;
+}
+ul {
+flex:1;
+text-align:right;
+font-size:50px;
+}
+ul li {
+display:inline-block;
+list style:none;
+margin: 0 25px;
+}
+ul li a {
+text-decoration:none;
+color:#000;
+padding:0 10px;
+position:relative;
+}
+ul li a::after {
+content:'';
+width:0;
+height:10px;
+background:#B9D9EB;
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+top:-55%;
+transition:0.5s;
+}
+ul li a:hover::after {
+width:100%;
+}
+.navbar-icons img {
+height:50px;
+margin-left:20px;
+cursor:pointer;
+}
+.navbar-icons {
+margin-left:20px;
+margin-right:20px;
+}
+.banner {
+display:flex;
+margin-top:80px;
+}
+.left-column {
+flex-basis:50%;
+}
+.search-box {
+border:none;
+width:30%;
+display:flex;
+padding-bottom:3px;
+border-bottom:1px solid #ddd;
+margin:50px 200px;
+}
+.search-box img {
+height:25px;
+width:25px;
+cursor:pointer;
+}
+.search-box input {
+width:100%;
+margin-left:15px;
+font-size:17px;
+outline:none;
+background-color:transparent;
+border:none;
+}
+.left-column h1 {
+font-family:"MarijaZivic", sans-serif;
+font-size:100px;
+margin:50px 200px;
+margin-bottom:0px;
+}
+.left-column h2 {
+font-size:35px;
+margin:50px 200px;
+margin-top:0px;
+margin-bottom:20px;
+}
+span {
+color:#B9D9EB;
+}
+.left-column p {
+font-size:17px;
+color:#999;
+margin:50px 200px;
+margin-top:0px;
+}
+@font-face {
+font-family:MarijaZivic;
+src:url("MarijaZivic.ttf");
+}
+.loader {
+width:100px;
+height:100px;
+position:absolute;
+margin:150px 60px;
+}
+.loader div {
+position:absolute;
+width:55%;
+height:55%;
+border-radius:5px;
+animation: load 2s infinite ease-in-out;
+}
+.loader div:nth-of-type(1) {
+background-color:#B9D9EB;
+}
+.loader div:nth-of-type(2) {
+background-color:#FFC0CB;
+animation-delay: 0.5s;
+}
+.loader div:nth-of-type(3) {
+background-color:#B9D9EB;
+animation-delay: 1s;
+}
+.loader div:nth-of-type(4) {
+background-color:#FFC0CB;
+animation-delay: 1.5s;
+}
+@keyframes load {
+0% {
+transform:translate(0%);
+border-radius:50%;
+}
+25% {
+transform:translate(200%)
+rotate(45deg);
+border-radius:0%;
+}
+50% {
+transform:translate(200%,200%);
+border-radius:50%;
+}
+75% {
+transform:translate(0, 200%);
+rotate(-45deg);
+border-radius:0%;
+}
+100% {
+transform:translate(0%);
+border-radius:50%;
+}
+</style>
+<body>
+<div class="navbar">
+<ul>
+<li><a href="omeni.html">O MENI</a></li>
+<li><a href="vjezbe.html">VJEŽBE</a></li>
+<li><a href="video.html">VIDEO</a></li>
+</ul>
+<div class="navbar-icons">
+<img src="fruit/bell.png">
+<img src="fruit/user.png">
+<img src="fruit/menu.png">
+</div>
+</div>
+<div class="banner">
+<div class="left-column">
+<div class="search-box">
+<img src="fruit/search.png">
+<input type="text">
+</div>
+<h1>Marija<span>Živić</span></h1>
+<h2>Kolegij<span>Digitalni multimedij 1</span></h2>
+<p>Dobrodošli na moju Web stranicu!<br>Ova stranica sadržava osnove HTML dokumenta i CSS tehnike<br> kao i sve moje radove napravljene tokom semestra.</p>
+</div>
+<div class="loader">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</body>
+</html>
